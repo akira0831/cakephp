@@ -174,14 +174,14 @@ class View implements EventDispatcherInterface
      * Sub-directory for this template file. This is often used for extension based routing.
      * Eg. With an `xml` extension, $subDir would be `xml/`
      *
-     * @var string
+     * @var string|null
      */
     public $subDir;
 
     /**
      * The view theme to use.
      *
-     * @var string
+     * @var string|null
      */
     public $theme;
 
@@ -497,7 +497,7 @@ class View implements EventDispatcherInterface
     /**
      * Get the current view theme.
      *
-     * @return string
+     * @return string|null
      */
     public function getTheme()
     {
